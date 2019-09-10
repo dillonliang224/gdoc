@@ -8,7 +8,8 @@ node_js:
   - 10
 
 script:
-  - echo go
+  - echo package version...
+  - echo $PACKAGE_VERSION
   # - echo `node -p -e 'require("./package.json").version'`
 
 before_deploy:

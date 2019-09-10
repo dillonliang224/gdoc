@@ -3,7 +3,7 @@
 	"displayName": "zsdoc",
 	"description": "vscode文档生成",
 	"publisher": "zsdoc", 
-	"version": "0.0.6",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.30.0"
 	},

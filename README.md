@@ -56,11 +56,18 @@
  */
 ```
 
-## 开发相关
+## 本地开发相关
 
-打包
+打包，生成的.vsix文件直接安装就行
 ```sh
 vsce package
 ```
 
 参考demo: https://github.com/mre/vscode-snippet/blob/master/src/extension.ts
+
+## github发布
+
+1. 本地更新package.json里的version
+2. 提交代码并打tag(同version)
+3. travis自动构建.vsix文件到release界面
+4. 更新release界面的日志（可选）

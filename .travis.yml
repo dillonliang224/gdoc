@@ -1,7 +1,7 @@
 env:
   global:
-    - PACKAGE_VERSION="$(node -p -e 'require("./package.json").version')"
-
+    # - PACKAGE_VERSION="$(node -p -e 'require("./package.json").version')"
+    - PACKAGE_VERSION=0.0.3
 language: node_js
 
 node_js:

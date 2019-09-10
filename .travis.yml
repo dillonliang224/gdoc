@@ -1,7 +1,7 @@
 env:
   global:
-    # - PACKAGE_VERSION="$(node -p -e 'require("./package.json").version')"
-    - PACKAGE_VERSION=0.0.3
+    - PACKAGE_VERSION=`node -p -e 'require("./package.json").version'`
+    # - PACKAGE_VERSION=0.0.3
 language: node_js
 
 node_js:
@@ -9,7 +9,7 @@ node_js:
 
 script:
   - echo go
-  - echo `node -p -e 'require("./package.json").version'`
+  # - echo `node -p -e 'require("./package.json").version'`
 
 before_deploy:
   - npm install -g vsce

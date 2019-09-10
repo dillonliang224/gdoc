@@ -23,5 +23,5 @@ deploy:
     skip_cleanup: true
     name: "zsdoc-${PACKAGE_VERSION}"
     on:
-      repo: https://github.com/dillonliang224/zsdoc.git
+      repo: zsdoc
       tags: true

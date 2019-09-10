@@ -1,0 +1,30 @@
+env:
+  global:
+    - PACKAGE_VERSION="$(node -p -e 'require("./package.json").version')"
+
+language: node_js
+
+node_js:
+  - 10
+
+before_script:
+  - npm install
+
+script:
+  - echo go
+
+before_deploy:
+  - npm install -g vsce
+  - vsce package
+
+deploy:
+  - provider: releases
+    api_key:
+      secure: $GITHUB_OAUTH_TOKEN
+    file_glob: true
+    file: "*.vsix"
+    skip_cleanup: true
+    name: "zsdoc-${PACKAGE_VERSION}"
+    on:
+      repo: https://github.com/dillonliang224/zsdoc.git
+      tags: true

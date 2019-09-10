@@ -1,7 +1,7 @@
 {
 	"name": "zsdoc",
 	"displayName": "zsdoc",
-	"description": "zs apdoc tools",
+	"description": "vscode文档生成",
 	"publisher": "zsdoc", 
 	"version": "0.0.3",
 	"engines": {

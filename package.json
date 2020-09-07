@@ -1,9 +1,9 @@
 {
-	"name": "zsdoc",
-	"displayName": "zsdoc",
-	"description": "vscode文档生成",
-	"publisher": "zsdoc", 
-	"version": "0.1.0",
+	"name": "gdoc",
+	"displayName": "gdoc",
+	"description": "generate doc for apidoc",
+	"publisher": "dillonliang", 
+	"version": "0.2.0",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
@@ -11,27 +11,27 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.zsdoc"
+		"onCommand:extension.gdoc"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.zsdoc",
-				"title": "zsdoc"
+				"command": "extension.gdoc",
+				"title": "gdoc"
 			}
 		],
 		"menus": {
             "editor/context": [
                 {
                     "when": "editorHasSelection",
-                    "command": "extension.zsdoc"
+                    "command": "extension.gdoc"
                 }
             ]
 		},
 		"keybindings": [
             {
-                "command": "extension.zsdoc",
+                "command": "extension.gdoc",
                 "key": "ctrl+shift+d",
                 "mac": "ctrl+alt+z",
                 "when": "editorHasSelection"

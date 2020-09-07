@@ -1,4 +1,4 @@
-name: zsdoc
+name: gdoc
 
 on:
   push:

@@ -21,8 +21,8 @@ deploy:
     file_glob: true
     file: "*.vsix"
     skip_cleanup: true
-    name: "zsdoc-${PACKAGE_VERSION}"
+    name: "gdoc-${PACKAGE_VERSION}"
     email: dillonliang@163.com
     on:
-      repo: dillonliang224/zsdoc
+      repo: dillonliang224/gdoc
       tags: true

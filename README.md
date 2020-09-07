@@ -15,7 +15,7 @@
 }
 ```
 
-把上面的json贴到需要生成日志的地方，选中json右击，选中zsdoc即可，会生成如下apidoc。
+把上面的json贴到需要生成日志的地方，选中json右击，选中gdoc即可，会生成如下apidoc。
 ```json
 /**
  * @api {get} /user/info 用户账户信息
